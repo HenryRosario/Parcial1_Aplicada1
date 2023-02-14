@@ -1755,11 +1755,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\Programacion aplicada 1\\Parcial1_Aplicada1\\Parcial1_Aplicada1.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\Programacion aplicada 1\\Parcial1_Aplicada1\\Parcial1_Aplicada1\\Parcial1_Aplicada1.csproj",
       "projectName": "Parcial1_Aplicada1",
-      "projectPath": "C:\\Users\\User\\Desktop\\Programacion aplicada 1\\Parcial1_Aplicada1\\Parcial1_Aplicada1.csproj",
+      "projectPath": "C:\\Users\\User\\Desktop\\Programacion aplicada 1\\Parcial1_Aplicada1\\Parcial1_Aplicada1\\Parcial1_Aplicada1.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\Programacion aplicada 1\\Parcial1_Aplicada1\\obj\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\Programacion aplicada 1\\Parcial1_Aplicada1\\Parcial1_Aplicada1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,0 +1,61 @@
+using System.Security.Permissions;
+using System;
+using System.Globalization;
+
+@page "/R_Libros"
+@page "/R_Libros/{LibroId:int}"
+@inject LibrosBLL LibrosBLL
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+<EditForm Model="libros" OnValidSubmit="Guardar">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+    <div class="card">
+        <div class="card-header">
+            <h3>Registro de libros</h3>
+        </div>
+        <div class="card-body">
+
+            @*Libro*@
+            <div class="form-r ow align-items-center">
+                <div class="col">
+                    <div class="form-group">
+                        <label>LibroId</label>
+                        <div class="input-group">
+                            <InputNumber @bind-Value="libros.LibroId" class="form-control col-4" />
+                            <div class="input-group-append">
+                                <button type="button" class="btn btn-primary input-group-text"
+                                    @onclick="Buscar">Buscar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            @*Titulo*@
+            <div class="form-group">
+                <label>Titulo</label>
+                <InputText @bind-Value="libros.Titulo" class="form-control" />
+                <ValidationMessage For="@(() => libros.Titulo)" />
+            </div>
+
+            @*Precio*@
+            <div class="form-group">
+                <label>Precio</label>
+                <InputNumber @bind-Value="libros.Precio" class="form-control" />
+                <ValidationMessage For="@(() =>libros.Precio)" />
+            </div>
+
+        </div>
+        <div class="card-footer">
+            <div class="form-group text-center" display: inline-block>
+                <button type="button" class="btn btn-lg btn-primary bi bi-file-earmark-plus" @onclick="Nuevo"> Nuevo</button>
+                <button type="submit" class="btn btn-lg btn-success bi bi-file-earmark"> Guardar</button>
+                <button  type="button" class="btn btn-lg btn-danger bi bi-trash"  @onclick="Eliminar" > Eliminar</button> 
+            </div>
+        </div>
+    </div>
+</EditForm >
+
+@code {
